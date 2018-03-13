@@ -1,4 +1,4 @@
-## Leetcode 总结
+## Table of Content
 
 1. [LinkedList](https://cloi1994.github.io/Linkedlist/)
 2. [Tree](https://cloi1994.github.io/Tree/)
