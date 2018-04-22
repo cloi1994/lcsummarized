@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    <title>DFS - Leetcode 总结</title>
+
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Leetcode 总结</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">HOME</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../linkedlist/">LinkedList</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../backtracking/">BackTracking</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../binarysearch/">BinarySearch</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../bfs/">BFS</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">DFS</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../tree/">Tree</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fa fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../bfs/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../tree/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#dfsbacktracking">DFS和Backtracking有什么不同</a></li>
+        <li class="first-level "><a href="#tree">Tree</a></li>
+            <li class="second-level"><a href="#preorder">PreOrder</a></li>
+                
+            <li class="second-level"><a href="#postorder">PostOrder</a></li>
+                
+            <li class="second-level"><a href="#every-node-is-root">Every Node is Root</a></li>
+                
+        <li class="first-level "><a href="#2d-array">2D Array</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="dfsbacktracking">DFS和Backtracking有什么不同</h2>
+<p>Difference 1:
+DFS handles an explicit tree.While Backtracking handles an implicit tree</p>
+<p>Difference 2:
+Depth First Search is a special type of backtracking algorithmic design paradigm where the process of backtracking takes place in the leaf nodes. In case of backtracking,the algorithm also rejects the useless branch of the state-space tree.This is why DFS maintains the entire tree structure while Backtracking maintaines a pruned tree</p>
+<h2 id="tree">Tree</h2>
+<h3 id="preorder">PreOrder</h3>
+<pre><code class="python">
+def helper(root):
+  if root == None:
+    return
+
+  print root.val #不用考虑左右子树的val，只管自己（就是当前那一层）
+  helper(root.left)
+  helper(root.right)
+
+</code></pre>
+
+<h3 id="postorder">PostOrder</h3>
+<pre><code class="python">
+def helper(root):
+  if root == None:
+    return
+  #事前，可以检查false case
+  left = helper(root.left)    #或者用其他function
+  right = helper(root.right)  #如Depth(root.left)
+  
+  #事后，可以知道left和right的val
+  #可以对left和right做一些操作如
+  if(minleft==0 or minright==0)
+      return minleft&gt;=minright?minleft+1:minright+1;
+
+  return min(left,right) + 1
+
+</code></pre>
+
+<h3 id="every-node-is-root">Every Node is Root</h3>
+<pre><code class="python">def pathSum(root,sum):
+  if root == None:
+     return 0
+  return findPathSum(root) + pathSum(root.left) + pathSum(root.right)
+
+def findPathSum(root,sum):
+  if root == None:
+    return 0
+
+  retval = 0
+
+  if root.val == sum:
+    retval = 1
+
+  return retval + findPathSum(root.left) + findPathSum(root.right)
+
+</code></pre>
+
+<h2 id="2d-array">2D Array</h2></div>
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '..';
+    </script>
+    <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../search/require.js"></script>
+    <script src="../search/search.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>

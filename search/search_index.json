@@ -1,0 +1,224 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Leetcode\n\n\nLeetCode\u662f\u4e00\u4e2a\u7f8e\u56fd\u7684\u5728\u7ebf\u7f16\u7a0b\u7f51\u7ad9\uff0c\u4e0a\u9762\u4e3b\u8981\u6536\u96c6\u4e86\u5404\u5927IT\u516c\u53f8\u7684\u7b14\u8bd5\u9762\u8bd5\u9898\uff0c\u5bf9\u4e8e\u627e\u5de5\u4f5c\u662f\u4e00\u4e2a\u4e0d\u53ef\u591a\u5f97\u7684\u597d\u5e2e\u624b\u3002\n\n\nLeetCode\u4e0a\u9762\u7684\u9898\u76ee\u504f\u57fa\u7840\u6027\uff0c\u57fa\u672c\u4e0a\u4e0d\u8003\u5bdf\u590d\u5236\u7684\u7b97\u6cd5\uff0c\u5f88\u591a\u90fd\u662f\u5bf9\u57fa\u7840\u77e5\u8bc6\u5e94\u7528\u3002\u5982\u679c\u60f3\u8981\u7ec3\u4e60\u7f16\u7a0b\u57fa\u7840\u6216\u8005\u51c6\u5907\u9762\u8bd5\u7684\u8bdd\uff0c\u975e\u5e38\u9002\u5408\u3002\n\n\n\u5176\u5b9e\uff0c\u5f88\u591a\u6c42\u804c\u8005\u90fd\u4f1a\u5728LeetCode\u5237\u4e0a\u4e00\u904d\uff0c\u9762\u8bd5\u5b98\u4e5f\u559c\u6b22\u5728\u4e0a\u9762\u6311\u9009\u5404\u7c7b\u9898\u76ee\uff0c\u4e0d\u4ec5\u53ef\u80fd\u4f1a\u9047\u5230\u539f\u9898\uff0c\u66f4\u91cd\u8981\u7684\u662f\u517b\u6210\u7f16\u7a0b\u7684\u4e60\u60ef\uff0c\u4ece\u4e2d\u5b66\u5230\u89e3\u51b3\u95ee\u9898\u7684\u601d\u60f3\u3002", 
+            "title": "HOME"
+        }, 
+        {
+            "location": "/#leetcode", 
+            "text": "LeetCode\u662f\u4e00\u4e2a\u7f8e\u56fd\u7684\u5728\u7ebf\u7f16\u7a0b\u7f51\u7ad9\uff0c\u4e0a\u9762\u4e3b\u8981\u6536\u96c6\u4e86\u5404\u5927IT\u516c\u53f8\u7684\u7b14\u8bd5\u9762\u8bd5\u9898\uff0c\u5bf9\u4e8e\u627e\u5de5\u4f5c\u662f\u4e00\u4e2a\u4e0d\u53ef\u591a\u5f97\u7684\u597d\u5e2e\u624b\u3002  LeetCode\u4e0a\u9762\u7684\u9898\u76ee\u504f\u57fa\u7840\u6027\uff0c\u57fa\u672c\u4e0a\u4e0d\u8003\u5bdf\u590d\u5236\u7684\u7b97\u6cd5\uff0c\u5f88\u591a\u90fd\u662f\u5bf9\u57fa\u7840\u77e5\u8bc6\u5e94\u7528\u3002\u5982\u679c\u60f3\u8981\u7ec3\u4e60\u7f16\u7a0b\u57fa\u7840\u6216\u8005\u51c6\u5907\u9762\u8bd5\u7684\u8bdd\uff0c\u975e\u5e38\u9002\u5408\u3002  \u5176\u5b9e\uff0c\u5f88\u591a\u6c42\u804c\u8005\u90fd\u4f1a\u5728LeetCode\u5237\u4e0a\u4e00\u904d\uff0c\u9762\u8bd5\u5b98\u4e5f\u559c\u6b22\u5728\u4e0a\u9762\u6311\u9009\u5404\u7c7b\u9898\u76ee\uff0c\u4e0d\u4ec5\u53ef\u80fd\u4f1a\u9047\u5230\u539f\u9898\uff0c\u66f4\u91cd\u8981\u7684\u662f\u517b\u6210\u7f16\u7a0b\u7684\u4e60\u60ef\uff0c\u4ece\u4e2d\u5b66\u5230\u89e3\u51b3\u95ee\u9898\u7684\u601d\u60f3\u3002", 
+            "title": "Leetcode"
+        }, 
+        {
+            "location": "/linkedlist/", 
+            "text": "1. \u5355\u94fe\u8868\u7684\u521b\u5efa\n\n\n\n\n\u5355\u94fe\u8868\u7684\u521b\u5efa\u4e00\u822c\u5206\u4e3a\u5206\u4e3a\u5934\u63d2\u53d1(Head Insert)\u548c\u5c3e\u63d2\u6cd5(Tail Insert)\n\n\n\n\n\u5934\u63d2\u6cd5\u662f\u6bcf\u6b21\u5c06\u65b0\u7684\u8282\u70b9\u63d2\u5165\u5230\u5934\u90e8,\u8fd9\u6837\u5f97\u5230\u7684\u94fe\u8868\u987a\u5e8f\u662f\u9006\u5e8f\n\n\n\u5c3e\u63d2\u6cd5\u662f\u6bcf\u6b21\u5c06\u65b0\u7684\u8282\u70b9\u63d2\u5165\u5230\u5c3e\u90e8,\u8fd9\u6837\u5f97\u5230\u7684\u94fe\u8868\u987a\u5e8f\u662f\u6b63\u5e8f\u7684. \n \u503c\u5f97\u6ce8\u610f\u7684\u662f,\u91c7\u7528\u5c3e\u63d2\u6cd5\u7684\u65f6\u5019\u9700\u8981\u4e00\u4e2a\u5c3e\u6307\u9488,\u65f6\u65f6\u523b\u523b\u6307\u5411\u94fe\u8868\u7684\u5c3e\u90e8 \n\n\n2. \u94fe\u8868\u7684\u64cd\u4f5c\n\n\n\n\n\u94fe\u8868\u7684\u63d2\u5165\u65e0\u975e\u662f\u63d2\u5165,\u5220\u9664\u64cd\u4f5c.\n\n\n\n\n\u5728\u63d2\u5165\u6216\u5220\u9664\u7684\u65f6\u5019,\u4e00\u5b9a\u8981\u62ff\u5230\u4ed6\u7684Prev Pointer\n\n\n\u4e3a\u4e86\u4fbf\u4e8e\u94fe\u8868\u7684\u64cd\u4f5c(\u4f8b\u5982,\u63d2\u5165\u5220\u9664, \u6539\u53d8Head),\u4e00\u822c\u4f7f\u7528\u5e26\u5934\u7ed3\u70b9\u7684\u94fe\u8868(Dummy Node)\n\n\n\u5e38\u89c1\u7684\u9898\u76ee\u5982\u4e0b:\n\n\n\n\nAdd Two Numbers\n\n\nMerge Two Sorted Lists\n\n\nPartition List\n\n\nRemove Linked List Elements\n\n\n\n\n3. \u94fe\u8868\u6700\u591a\u4f7f\u7528\u4e09\u4e2aPointer\n\n\n\n\nPrev - \u7528\u4f86Delete CurNode\n\n\nCur - \u7528\u4f86\u904d\u5386Linklist\n\n\nNext -\u4fdd\u5b58CurNode\u7684\u4e0b\u4e00\u4e2aPointer,\u907f\u514d\u4fee\u6539\u4e86Cur.next,\u800c\u65e0\u6cd5\u5f97\u5230Next\n\n\n\n\n\u5e38\u89c1\u7684\u9898\u76ee\u5982\u4e0b:\n\n\n\n\n24 \nSwap Nodes in Pairs\n\n\n25 \nReverse Nodes in k-Group\n\n\n61 \nRotate List\n\n\n82 \nRemove Duplicates from Sorted List II\n\n\n91 \nReverse Linked List I\n\n\n92 \nReverse Linked List II\n\n\n\n\n4. LinkedList\u7684\u4e2d\u70b9\n\n\n\n\n\u4f7f\u7528\u4e24\u4e2a\u6307\u9488slow,fast\nslow\u548cfast\u540c\u65f6\u5411\u524d\u8df3, slow\u6bcf\u6b21\u5411\u524d\u8df3\u4e00\u4e2a\u8282\u70b9, fast\u6bcf\u6b21\u5411\u524d\u8df3\u4e24\u4e2a\u8282\u70b9,\n\u5f53fast\u8c03\u5230\u5c3e\u90e8\u7684\u65f6\u5019, slow\u5c31\u6307\u5411\u4e86\u4e2d\u70b9\n\n\n\n\n        while fast.next and fast.next.next:\n            slow = slow.next\n            fast = fast.next.next\n\n\n\n\n5. LinkedList - Remove k from the end of the list\n\n\nfast\u5148\u524d\u8df3K\u6b65, slow\u548cfast\u6bcf\u6b21\u5411\u524d\u8df3\u4e00\u4e2a\u8282\u70b9, \u5f53fast\u8c03\u5230\u5c3e\u90e8\u7684\u65f6\u5019, slow\u5c31\u6307\u5411\u4e86K Node\u7684Prev Node.\n\n\n6. LinkedList Cycle\n\n\n\n\na) \u94fe\u8868\u662f\u5426\u5b58\u5728\u73af?\n\n\n\n\n\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u4e24\u4e2a\u6307\u9488slow\u548cfast, fast\u6bcf\u6b21\u524d\u8fdb\u4e24\u6b65,slow\u6bcf\u6b21\u524d\u8fdb\u4e00\u6b21\n\n\n\u5982\u679cfast\u548cslow\u90fd\u5230\u94fe\u8868\u5c3e\u90e8\u4e14\u4e3a\u7a7a,\u5219\u4e0d\u5728\u73af.\n\n\n\u5982\u679cfast\u548cslow\u7b2c\u4e00\u6b21\u76f8\u9047\u5230\u67d0\u4e00\u8282\u70b9,\u4e14\u4e0d\u4e3a\u7a7a,\u5219\u5b58\u5728\u73af.\n\n\n        while fast.next and fast.next.next:\n            slow = slow.next\n            fast = fast.next.next\n            if slow == fast:\n                return true\n        return false\n\n\n\n\n\n\nb) \u94fe\u8868\u73af\u7684\u5165\u53e3\u8282\u70b9?\n\n\n\n\n\u6839\u636e\u7b2c\u4e00\u6b21\u76f8\u9047\u7684\u5730\u65b9,\u628aslow\u6307\u56dehead,\u7136\u540eslow,fast\u5728\u76f8\u540c\u7684\u901f\u5ea6\u518d\u8d70\u4e00\u904d,\u5f53\u4ed6\u4eec\u518d\u6b21\u76f8\u9047\u5c31\u662f\u5165\u53e3\u4e86.\n\n\n        while fast.next and fast.next.next:\n            slow = slow.next\n            fast = fast.next.next\n            if fast == slow:\n                slow = head\n                while slow != fast:\n                        slow = slow.next\n                        fast = fast.next\n            return slow\n\n\n\n\n7. Hard\n\n\n\u5e38\u89c1\u7684\u9898\u76ee\u5982\u4e0b:\n- 25 Reverse Nodes in k-Group\n- 138 Copy List with Random Pointer\n- 143 Reorder List\n- 146 LRU Cache\n\n\n8. Reference\n\n\nhttps://www.jianshu.com/p/ecb5c1b6c318", 
+            "title": "LinkedList"
+        }, 
+        {
+            "location": "/linkedlist/#1", 
+            "text": "\u5355\u94fe\u8868\u7684\u521b\u5efa\u4e00\u822c\u5206\u4e3a\u5206\u4e3a\u5934\u63d2\u53d1(Head Insert)\u548c\u5c3e\u63d2\u6cd5(Tail Insert)   \u5934\u63d2\u6cd5\u662f\u6bcf\u6b21\u5c06\u65b0\u7684\u8282\u70b9\u63d2\u5165\u5230\u5934\u90e8,\u8fd9\u6837\u5f97\u5230\u7684\u94fe\u8868\u987a\u5e8f\u662f\u9006\u5e8f  \u5c3e\u63d2\u6cd5\u662f\u6bcf\u6b21\u5c06\u65b0\u7684\u8282\u70b9\u63d2\u5165\u5230\u5c3e\u90e8,\u8fd9\u6837\u5f97\u5230\u7684\u94fe\u8868\u987a\u5e8f\u662f\u6b63\u5e8f\u7684.   \u503c\u5f97\u6ce8\u610f\u7684\u662f,\u91c7\u7528\u5c3e\u63d2\u6cd5\u7684\u65f6\u5019\u9700\u8981\u4e00\u4e2a\u5c3e\u6307\u9488,\u65f6\u65f6\u523b\u523b\u6307\u5411\u94fe\u8868\u7684\u5c3e\u90e8", 
+            "title": "1. \u5355\u94fe\u8868\u7684\u521b\u5efa"
+        }, 
+        {
+            "location": "/linkedlist/#2", 
+            "text": "\u94fe\u8868\u7684\u63d2\u5165\u65e0\u975e\u662f\u63d2\u5165,\u5220\u9664\u64cd\u4f5c.   \u5728\u63d2\u5165\u6216\u5220\u9664\u7684\u65f6\u5019,\u4e00\u5b9a\u8981\u62ff\u5230\u4ed6\u7684Prev Pointer  \u4e3a\u4e86\u4fbf\u4e8e\u94fe\u8868\u7684\u64cd\u4f5c(\u4f8b\u5982,\u63d2\u5165\u5220\u9664, \u6539\u53d8Head),\u4e00\u822c\u4f7f\u7528\u5e26\u5934\u7ed3\u70b9\u7684\u94fe\u8868(Dummy Node)  \u5e38\u89c1\u7684\u9898\u76ee\u5982\u4e0b:   Add Two Numbers  Merge Two Sorted Lists  Partition List  Remove Linked List Elements", 
+            "title": "2. \u94fe\u8868\u7684\u64cd\u4f5c"
+        }, 
+        {
+            "location": "/linkedlist/#3-pointer", 
+            "text": "Prev - \u7528\u4f86Delete CurNode  Cur - \u7528\u4f86\u904d\u5386Linklist  Next -\u4fdd\u5b58CurNode\u7684\u4e0b\u4e00\u4e2aPointer,\u907f\u514d\u4fee\u6539\u4e86Cur.next,\u800c\u65e0\u6cd5\u5f97\u5230Next   \u5e38\u89c1\u7684\u9898\u76ee\u5982\u4e0b:   24  Swap Nodes in Pairs  25  Reverse Nodes in k-Group  61  Rotate List  82  Remove Duplicates from Sorted List II  91  Reverse Linked List I  92  Reverse Linked List II", 
+            "title": "3. \u94fe\u8868\u6700\u591a\u4f7f\u7528\u4e09\u4e2aPointer"
+        }, 
+        {
+            "location": "/linkedlist/#4-linkedlist", 
+            "text": "\u4f7f\u7528\u4e24\u4e2a\u6307\u9488slow,fast\nslow\u548cfast\u540c\u65f6\u5411\u524d\u8df3, slow\u6bcf\u6b21\u5411\u524d\u8df3\u4e00\u4e2a\u8282\u70b9, fast\u6bcf\u6b21\u5411\u524d\u8df3\u4e24\u4e2a\u8282\u70b9,\n\u5f53fast\u8c03\u5230\u5c3e\u90e8\u7684\u65f6\u5019, slow\u5c31\u6307\u5411\u4e86\u4e2d\u70b9           while fast.next and fast.next.next:\n            slow = slow.next\n            fast = fast.next.next", 
+            "title": "4. LinkedList\u7684\u4e2d\u70b9"
+        }, 
+        {
+            "location": "/linkedlist/#5-linkedlist-remove-k-from-the-end-of-the-list", 
+            "text": "fast\u5148\u524d\u8df3K\u6b65, slow\u548cfast\u6bcf\u6b21\u5411\u524d\u8df3\u4e00\u4e2a\u8282\u70b9, \u5f53fast\u8c03\u5230\u5c3e\u90e8\u7684\u65f6\u5019, slow\u5c31\u6307\u5411\u4e86K Node\u7684Prev Node.", 
+            "title": "5. LinkedList - Remove k from the end of the list"
+        }, 
+        {
+            "location": "/linkedlist/#6-linkedlist-cycle", 
+            "text": "a) \u94fe\u8868\u662f\u5426\u5b58\u5728\u73af?   \u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u4e24\u4e2a\u6307\u9488slow\u548cfast, fast\u6bcf\u6b21\u524d\u8fdb\u4e24\u6b65,slow\u6bcf\u6b21\u524d\u8fdb\u4e00\u6b21  \u5982\u679cfast\u548cslow\u90fd\u5230\u94fe\u8868\u5c3e\u90e8\u4e14\u4e3a\u7a7a,\u5219\u4e0d\u5728\u73af.  \u5982\u679cfast\u548cslow\u7b2c\u4e00\u6b21\u76f8\u9047\u5230\u67d0\u4e00\u8282\u70b9,\u4e14\u4e0d\u4e3a\u7a7a,\u5219\u5b58\u5728\u73af.          while fast.next and fast.next.next:\n            slow = slow.next\n            fast = fast.next.next\n            if slow == fast:\n                return true\n        return false   b) \u94fe\u8868\u73af\u7684\u5165\u53e3\u8282\u70b9?   \u6839\u636e\u7b2c\u4e00\u6b21\u76f8\u9047\u7684\u5730\u65b9,\u628aslow\u6307\u56dehead,\u7136\u540eslow,fast\u5728\u76f8\u540c\u7684\u901f\u5ea6\u518d\u8d70\u4e00\u904d,\u5f53\u4ed6\u4eec\u518d\u6b21\u76f8\u9047\u5c31\u662f\u5165\u53e3\u4e86.          while fast.next and fast.next.next:\n            slow = slow.next\n            fast = fast.next.next\n            if fast == slow:\n                slow = head\n                while slow != fast:\n                        slow = slow.next\n                        fast = fast.next\n            return slow", 
+            "title": "6. LinkedList Cycle"
+        }, 
+        {
+            "location": "/linkedlist/#7-hard", 
+            "text": "\u5e38\u89c1\u7684\u9898\u76ee\u5982\u4e0b:\n- 25 Reverse Nodes in k-Group\n- 138 Copy List with Random Pointer\n- 143 Reorder List\n- 146 LRU Cache", 
+            "title": "7. Hard"
+        }, 
+        {
+            "location": "/linkedlist/#8-reference", 
+            "text": "https://www.jianshu.com/p/ecb5c1b6c318", 
+            "title": "8. Reference"
+        }, 
+        {
+            "location": "/backtracking/", 
+            "text": "DFS\u548cBacktracking\u7684\u533a\u522b\n\n\n\n\n\n\nDFS: Search in a already existed graph\n\n\n\n\n\n\nBackTracking: Generating Graph/Tree\n\n\n\n\n\n\n\u8ff7\u5bab\u6bd4\u55bb\n\n\nwhile exist not found:\n  for each path in the fork:\n    check whether the path is safe\n    if yes :  #notice that, we haven't select the current path in the fork\n      select it and continue walk\n  if all paths don't resolve the maze, return False\n\n\n\n\n\nGenerics \u6a21\u677f\n\n\n\n\nNotice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If solve(n)\nis true, that means node n is part of a solution--that is, node n is one of the nodes on a path from the root to some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal nod\n\n\n\n\nboolean solve(Node n) {\n    if n is a leaf node {\n        if the leaf is a goal node,\n          return true\n        else\n          return false\n    } else {\n        for each child c of n {\n            if solve(c) succeeds, return true\n        }\n        return false\n    }\n}\n\n\n\n\nvoid solve(Node n) {\n    if n is a leaf node {\n        if the leaf is a goal node,\n          count++,\n          return;\n        else return\n    } else {\n        for each child c of n {\n            solve(c)\n        }\n    }\n}\n\n\n\n\n\u6a21\u677f\n\n\ndef dfs(tmp, res):\n    if remain \n 0: #impossible\n        return\n    if success: #ending condition/base case\n        res.append(tmp[:])\n        return\n    for all possible childs: #\u540c\u4e00\u5c42\u641c\u7d22\n \u00a0 \u00a0 \u00a0 \u00a0if not Valid(): #\u6aa2\u67e5\u5f53\u524d\u4f4d\u7f6e\u662f\u5426\u7b26\u5408\u6761\u4ef6\uff0c\n \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0continue \u00a0#\u5982\u679c\u4e0d\u7b26\u5408\u6761\u4ef6\uff0c\u5c31skip\u5230\u4e0b\u4e00child\n \u00a0 \u00a0 \u00a0 \u00a0tmp.append(arr[i])\n \u00a0 \u00a0 \u00a0 \u00a0dfs(tmp.res) # \u5230\u4e0b\u4e00\u5c42\u641c\u7d22\n        tmp.pop()\n\n\n\n\nCase Study\n\n\n1. Permutation\n\n\n\u5c06\u6570\u7ec4\u5f53\u505a\u4e00\u4e2a\u6c60\u5b50\uff0c\u7b2c\u4e00\u6b21\u53d6\u51fa\u4e00\u4e2a\u6570\uff0c\u7136\u540e\u5728\u6c60\u5b50\u91cc\u5269\u4e0b\u7684\u6570\u4e2d\u518d\u4efb\u610f\u53d6\u4e00\u4e2a\u6570\u6b64\u65f6\u7ec4\u6210\u4e24\u4e2a\u6570\uff0c\n\n\n\u7136\u540e\u518d\u5728\u6c60\u5b50\u4e2d\u5269\u4e0b\u7684\u6570\u91cc\u53d6\u6570\uff0c\u76f4\u5230\u65e0\u6570\u53ef\u53d6\uff0c\u5373\u53d6\u5b8c\u4e00\u6b21\uff0c\u5f62\u6210\u4e00\u4e2a\u6392\u5217\u3002\n\n\ndef dfs(tmp,res,visited):\n   for i in range(0,n):\n      if vistied():  #\u7b2c\u4e00\u6b21\u53ea\u80fd\u53d6\u51fa\u4e00\u4e2a\u6570\n         cointine\n      visited[i] = 1\n      dfs()\n      visited[i] = 0\n\n\n\n\n2. Combination\n\n\nCombination\u91cc\u76841,2\u548c2,1\u662f\u4e00\u6837\uff0c\u6240\u4ee52,1\u8981\u5ffd\u7565\n\n\ndef dfs(l, tmp, res):\n   for i in range(l, n):\n      dfs(i)# \u6bcf\u4e2aelemnt\u53ef\u4ee5\u91cd\u590d\u7528\uff0c \u4f46\u4e0d\u80fd\u9006\u5e8f\n\n\n\n\ndef dfs(l, tmp, res):\n   for i in range(l, n):\n      dfs(i+1)# \u6bcf\u4e2aelemnt\u53ea\u80fd\u7528\u4e00\u6b21\n\n\n\n\n3. Permutation\u548c Combination \u91cc\u6709\u91cd\u590d\u6570\u5b57\n\n\ndef dfs(l, tmp, res):\n   for i in range(l, n):\n      if i != l and arr[i - 1] == arr[i]: # \u8df3\u8fc7\u91cd\u590d\u6570\u5b57\n        continue\n      dfs(i+1)# \u6bcf\u4e2aelemnt\u53ea\u80fd\u7528\u4e00\u6b21\n\n\n\n\n4. String Parition\n\n\ndef dfs(l, tmp, res):\n    for i in range(l, len(s)):\n        subString = s[l:i+1]\n    dfs(i+1, tmp, res)\n\n\n\n\n\n\n\n\nPalindrome Partitioning\n\n\n\n\n\n\nRestore Ip Addresses\n\n\n\n\n\n\n\n\n\n\n2D Matrix\n\n\n\n\n\n\nN-Queen\n\n\n\n\n\n\nSudoku\n\n\n\n\n\n\n\u6ce8\u610f\u5730\u65b9\n\n\n\n\nfor loop\u662f\u6a2a\u7740\u8d70\uff08\u540c\u4e00\u5c42\uff09\n\n\nrecursive()\u662f\u5411\u4e0b\u8d70\uff08\u4e0b\u4e00\u5c42\uff09\n\n\n\u5982\u679c recursive function \u6709 return type, \u4f60\u4e00\u5b9a\u8981\u52a0 return \u5728 fun_name() \u4e4b\u524d\n\n\n\n\nReference\n\n\nhttps://www.jianshu.com/p/3ef0e4e1114d", 
+            "title": "BackTracking"
+        }, 
+        {
+            "location": "/backtracking/#dfsbacktracking", 
+            "text": "DFS: Search in a already existed graph    BackTracking: Generating Graph/Tree", 
+            "title": "DFS\u548cBacktracking\u7684\u533a\u522b"
+        }, 
+        {
+            "location": "/backtracking/#_1", 
+            "text": "while exist not found:\n  for each path in the fork:\n    check whether the path is safe\n    if yes :  #notice that, we haven't select the current path in the fork\n      select it and continue walk\n  if all paths don't resolve the maze, return False", 
+            "title": "\u8ff7\u5bab\u6bd4\u55bb"
+        }, 
+        {
+            "location": "/backtracking/#generics", 
+            "text": "Notice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If solve(n)\nis true, that means node n is part of a solution--that is, node n is one of the nodes on a path from the root to some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal nod   boolean solve(Node n) {\n    if n is a leaf node {\n        if the leaf is a goal node,\n          return true\n        else\n          return false\n    } else {\n        for each child c of n {\n            if solve(c) succeeds, return true\n        }\n        return false\n    }\n}  void solve(Node n) {\n    if n is a leaf node {\n        if the leaf is a goal node,\n          count++,\n          return;\n        else return\n    } else {\n        for each child c of n {\n            solve(c)\n        }\n    }\n}", 
+            "title": "Generics \u6a21\u677f"
+        }, 
+        {
+            "location": "/backtracking/#_2", 
+            "text": "def dfs(tmp, res):\n    if remain   0: #impossible\n        return\n    if success: #ending condition/base case\n        res.append(tmp[:])\n        return\n    for all possible childs: #\u540c\u4e00\u5c42\u641c\u7d22\n \u00a0 \u00a0 \u00a0 \u00a0if not Valid(): #\u6aa2\u67e5\u5f53\u524d\u4f4d\u7f6e\u662f\u5426\u7b26\u5408\u6761\u4ef6\uff0c\n \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0continue \u00a0#\u5982\u679c\u4e0d\u7b26\u5408\u6761\u4ef6\uff0c\u5c31skip\u5230\u4e0b\u4e00child\n \u00a0 \u00a0 \u00a0 \u00a0tmp.append(arr[i])\n \u00a0 \u00a0 \u00a0 \u00a0dfs(tmp.res) # \u5230\u4e0b\u4e00\u5c42\u641c\u7d22\n        tmp.pop()", 
+            "title": "\u6a21\u677f"
+        }, 
+        {
+            "location": "/backtracking/#case-study", 
+            "text": "", 
+            "title": "Case Study"
+        }, 
+        {
+            "location": "/backtracking/#1-permutation", 
+            "text": "\u5c06\u6570\u7ec4\u5f53\u505a\u4e00\u4e2a\u6c60\u5b50\uff0c\u7b2c\u4e00\u6b21\u53d6\u51fa\u4e00\u4e2a\u6570\uff0c\u7136\u540e\u5728\u6c60\u5b50\u91cc\u5269\u4e0b\u7684\u6570\u4e2d\u518d\u4efb\u610f\u53d6\u4e00\u4e2a\u6570\u6b64\u65f6\u7ec4\u6210\u4e24\u4e2a\u6570\uff0c  \u7136\u540e\u518d\u5728\u6c60\u5b50\u4e2d\u5269\u4e0b\u7684\u6570\u91cc\u53d6\u6570\uff0c\u76f4\u5230\u65e0\u6570\u53ef\u53d6\uff0c\u5373\u53d6\u5b8c\u4e00\u6b21\uff0c\u5f62\u6210\u4e00\u4e2a\u6392\u5217\u3002  def dfs(tmp,res,visited):\n   for i in range(0,n):\n      if vistied():  #\u7b2c\u4e00\u6b21\u53ea\u80fd\u53d6\u51fa\u4e00\u4e2a\u6570\n         cointine\n      visited[i] = 1\n      dfs()\n      visited[i] = 0", 
+            "title": "1. Permutation"
+        }, 
+        {
+            "location": "/backtracking/#2-combination", 
+            "text": "Combination\u91cc\u76841,2\u548c2,1\u662f\u4e00\u6837\uff0c\u6240\u4ee52,1\u8981\u5ffd\u7565  def dfs(l, tmp, res):\n   for i in range(l, n):\n      dfs(i)# \u6bcf\u4e2aelemnt\u53ef\u4ee5\u91cd\u590d\u7528\uff0c \u4f46\u4e0d\u80fd\u9006\u5e8f  def dfs(l, tmp, res):\n   for i in range(l, n):\n      dfs(i+1)# \u6bcf\u4e2aelemnt\u53ea\u80fd\u7528\u4e00\u6b21", 
+            "title": "2. Combination"
+        }, 
+        {
+            "location": "/backtracking/#3-permutation-combination", 
+            "text": "def dfs(l, tmp, res):\n   for i in range(l, n):\n      if i != l and arr[i - 1] == arr[i]: # \u8df3\u8fc7\u91cd\u590d\u6570\u5b57\n        continue\n      dfs(i+1)# \u6bcf\u4e2aelemnt\u53ea\u80fd\u7528\u4e00\u6b21", 
+            "title": "3. Permutation\u548c Combination \u91cc\u6709\u91cd\u590d\u6570\u5b57"
+        }, 
+        {
+            "location": "/backtracking/#4-string-parition", 
+            "text": "def dfs(l, tmp, res):\n    for i in range(l, len(s)):\n        subString = s[l:i+1]\n    dfs(i+1, tmp, res)    Palindrome Partitioning    Restore Ip Addresses", 
+            "title": "4. String Parition"
+        }, 
+        {
+            "location": "/backtracking/#2d-matrix", 
+            "text": "N-Queen    Sudoku", 
+            "title": "2D Matrix"
+        }, 
+        {
+            "location": "/backtracking/#_3", 
+            "text": "for loop\u662f\u6a2a\u7740\u8d70\uff08\u540c\u4e00\u5c42\uff09  recursive()\u662f\u5411\u4e0b\u8d70\uff08\u4e0b\u4e00\u5c42\uff09  \u5982\u679c recursive function \u6709 return type, \u4f60\u4e00\u5b9a\u8981\u52a0 return \u5728 fun_name() \u4e4b\u524d", 
+            "title": "\u6ce8\u610f\u5730\u65b9"
+        }, 
+        {
+            "location": "/backtracking/#reference", 
+            "text": "https://www.jianshu.com/p/3ef0e4e1114d", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/binarysearch/", 
+            "text": "Search Template\n\n\ndef findFirst(nums, target):\n    start = 0\n    end = len(nums) - 1\n    while start \n= end:\n        mid = start + (end - start) / 2\n        if nums[mid] == target:\n            return mid\n        if nums[mid] \n target:\n            end = mid - 1\n        else:\n            start = mid + 1\n    return -1\n\n\n\n\nSearch for Matrix\n\n\ndef findFirst(nums, target):\n    start = 0\n    end = row_num * col_num - 1\n    while start \n= end:\n        mid = start + (end - start) / 2\n        if nums[mid/col_num][mid%col_num] == target:\n            return True\n        if nums[mid] \n target:\n            end = mid - 1\n        else:\n            start = mid + 1\n    return False\n\n\n\n\nSearch for First Occurrence\n\n\ndef findFirst(nums, target):\n    idx = -1\n    start = 0\n    end = len(nums) - 1\n    while start \n= end:\n        mid = start + (end - start) / 2\n        if nums[mid] \n= target:\n            end = mid - 1\n        else:\n            start = mid + 1\n        if nums[mid] == target:\n          idx = mid\n    return idx\n\n\n\n\n\n\nLeftMostOne\n\n\n\n\nSearch for Last Occurrence\n\n\ndef findFirst(nums, target):\n    idx = -1\n    start = 0\n    end = len(nums) - 1\n    while start \n= end:\n        mid = start + (end - start) / 2\n        if nums[mid] \n= target:\n            start = mid + 1\n        else:\n            end = mid - 1\n        if nums[mid] == target:\n          idx = mid\n    return idx", 
+            "title": "BinarySearch"
+        }, 
+        {
+            "location": "/binarysearch/#search-template", 
+            "text": "def findFirst(nums, target):\n    start = 0\n    end = len(nums) - 1\n    while start  = end:\n        mid = start + (end - start) / 2\n        if nums[mid] == target:\n            return mid\n        if nums[mid]   target:\n            end = mid - 1\n        else:\n            start = mid + 1\n    return -1", 
+            "title": "Search Template"
+        }, 
+        {
+            "location": "/binarysearch/#search-for-matrix", 
+            "text": "def findFirst(nums, target):\n    start = 0\n    end = row_num * col_num - 1\n    while start  = end:\n        mid = start + (end - start) / 2\n        if nums[mid/col_num][mid%col_num] == target:\n            return True\n        if nums[mid]   target:\n            end = mid - 1\n        else:\n            start = mid + 1\n    return False", 
+            "title": "Search for Matrix"
+        }, 
+        {
+            "location": "/binarysearch/#search-for-first-occurrence", 
+            "text": "def findFirst(nums, target):\n    idx = -1\n    start = 0\n    end = len(nums) - 1\n    while start  = end:\n        mid = start + (end - start) / 2\n        if nums[mid]  = target:\n            end = mid - 1\n        else:\n            start = mid + 1\n        if nums[mid] == target:\n          idx = mid\n    return idx   LeftMostOne", 
+            "title": "Search for First Occurrence"
+        }, 
+        {
+            "location": "/binarysearch/#search-for-last-occurrence", 
+            "text": "def findFirst(nums, target):\n    idx = -1\n    start = 0\n    end = len(nums) - 1\n    while start  = end:\n        mid = start + (end - start) / 2\n        if nums[mid]  = target:\n            start = mid + 1\n        else:\n            end = mid - 1\n        if nums[mid] == target:\n          idx = mid\n    return idx", 
+            "title": "Search for Last Occurrence"
+        }, 
+        {
+            "location": "/bfs/", 
+            "text": "\u4eca\u5929\u603b\u7ed3\u4e00\u4e0b\u5e7f\u5ea6\u4f18\u5148\u641c\u7d22(BFS). BFS\u662f\u6811/\u56fe\u7684\u904d\u5386\u7684\u5e38\u7528\u7b97\u6cd5\u4e4b\u4e00, \u5bf9\u4e8e\u6ca1\u6709\u8fb9\u6743\u91cd\u7684\u56fe\u6765\u8bf4\u53ef\u4ee5\u8ba1\u7b97\u6700\u77ed\u8def\u5f84.\n\u7531\u4e8e\u6811\u7684BFS\u53ea\u662f\u56fe\u7684BFS\u7684\u4e00\u79cd\u7279\u6b8a\u60c5\u51b5, \u800c\u4e14\u6bd4\u8f83\u7b80\u5355\u4e0d\u9700\u8981visited\u6807\u8bb0, \u8fd9\u91cc\u53ea\u5199\u4e00\u4e0b\u56fe\u7684BFS\u597d\u4e86.\n\n\nBFS for trees/graphs\n\n\n\u56fe\u7684\u904d\u5386\u9700\u8981\u6ce8\u610f\u4e0d\u8d70\u91cd\u590d\u8282\u70b9, \u6240\u4ee5\u9700\u8981\u4e00\u4e2aHashSet(\u540d\u5b57\u53ebvisited)\u6765\u4fdd\u5b58\u54ea\u4e9b\u8282\u70b9\u5df2\u7ecf\u8bbf\u95ee\u8fc7\u4e86. \u9700\u8981\u6ce8\u610f\u7684\u662f, \u5728\u628a\u4e00\u4e2a\u8282\u70b9\u653e\u8fdb\u961f\u5217queue\u7684\u65f6\u523b\u5c31\u8981\u628a\u5b83\u653e\u8fdbvisited, \u800c\u4e0d\u662f\u5728\u961f\u5217\u91cc\u53d6\u51fa\u6765\u7684\u65f6\u523b\u518d\u653e.\n\n\n    def BFS(start):\n      q = []\n      visited = {start:1}\n      q.append(start)\n\n      while len(q) != 0:\n        cur = q.pop(0)\n        for nextNode in cur.childrens: # tree's left and right    \n          if nextNode not in visted:   # tree's not null\n            q.append(nextNode)\n            visited[nextNode] = 1\n\n\n\n\nBFS with distance\n\n\n\u5728BFS\u7684\u540c\u65f6\u6211\u4eec\u53ef\u4ee5\u8bb0\u5f55\u4ecestart\u8282\u70b9\u5230\u5f53\u524dnode\u7684\u8ddd\u79bb, \u65b9\u6cd5\u662f\u628a\u4e00\u4e2a\u8ddd\u79bb\u4fe1\u606f\u540c\u65f6\u5165\u961f(\u5c01\u88c5\u4e00\u4e2aPair\n), \u6216\u8005\u4f7f\u7528\u4e00\u4e2a\u4e0equeue\u5e73\u884c\u7684\u961f\u5217\u4fdd\u5b58\u8ddd\u79bb\u4fe1\u606f.\n\n\n    def BFS(start):\n      q = []\n      visited = {start:1}\n      q.append([start,1])\n\n      while len(q) != 0:\n        curNode, curDistance = q.pop(0)\n        for nextNode in cur.childrens: # tree's left and right    \n          if nextNode not in visted:   # tree's not null\n            q.append([nextNode,curDistance + 1])\n            visited[nextNode] = 1\n\n\n\n\nBFS with layer\n\n\n\u53c2\u8003\u4e0a\u9762\u7684\u6027\u8d28, \u53ef\u4ee5\u4e00\u6b21\u5904\u7406\"\u4e00\u5c42\"\u7684\u8282\u70b9, \"\u4e00\u5c42\"\u7684\u610f\u601d\u662f\u6307\u6240\u6709\u8282\u70b9\u8ddd\u79bbstart\u7684\u8ddd\u79bb\u76f8\u540c. \u4ee3\u7801\u5728while\u5faa\u73af\u91cc\u4e0d\u662f\u4e00\u6b21poll\u4e00\u4e2a\u8282\u70b9, \u800c\u662f\u4e00\u6b21\u628aqueue\u7684\u5185\u5bb9\u5904\u7406\u5b8c, \u7136\u540e\u6362\u65b0\u7684queue\u8fdb\u5165\u4e0b\u4e00\u6b21while\u5faa\u73af.\n\n\n    def BFS(start):\n      q = []\n      visited = {start:1}\n      q.append(start)\n      layer = []\n\n      while len(q) != 0:\n        subLayer = []\n        for curNode in q:\n            subLayer.append(curNode)\n            for nextNode in cur.childrens: # tree's left and right    \n                if nextNode not in visted:   # tree's not null\n                    q.append(nextNode)\n                    visited[nextNode] = 1\n        layer.add(sublayer)\n\n\n\n\n\u5e38\u89c1\u7684\u9898\u76ee\u5982\u4e0b:\n\n\n\n\n127. Word Ladder\n\n\n\n\ncomplexity\n\n\n\u5047\u8bbe\u4e00\u4e2a\u56fe\u6709N\u4e2a\u8282\u70b9\u548cM\u6761\u8fb9, BFS\u4f1a\u8d70\u904d\u6240\u6709\u8282\u70b9, \u65f6\u95f4\u662fO(N), \u7136\u540e\u7531\u4e8e\u6bcf\u4e2a\u8282\u70b9\u4f1a\u68c0\u67e5\u6240\u6709\u7684\u51fa\u8fb9, \u6700\u7ec8\u6240\u6709\u7684\u8fb9\u90fd\u4f1a\u88ab\u68c0\u67e5\u8fc7, \u65f6\u95f4\u662fO(M), \u6240\u4ee5BFS\u7684\u65f6\u95f4\u590d\u6742\u5ea6\u662fO(N+M).\n\n\n\u961f\u5217\u91cc\u9762\u6700\u591a\u53ef\u80fd\u5b58\u653e\u6240\u6709\u8282\u70b9, \u7a7a\u95f4\u590d\u6742\u5ea6\u4e3aO(N).\n\n\nReference\n\n\nhttp://x-wei.github.io/bfs-summary.html", 
+            "title": "BFS"
+        }, 
+        {
+            "location": "/bfs/#bfs-for-treesgraphs", 
+            "text": "\u56fe\u7684\u904d\u5386\u9700\u8981\u6ce8\u610f\u4e0d\u8d70\u91cd\u590d\u8282\u70b9, \u6240\u4ee5\u9700\u8981\u4e00\u4e2aHashSet(\u540d\u5b57\u53ebvisited)\u6765\u4fdd\u5b58\u54ea\u4e9b\u8282\u70b9\u5df2\u7ecf\u8bbf\u95ee\u8fc7\u4e86. \u9700\u8981\u6ce8\u610f\u7684\u662f, \u5728\u628a\u4e00\u4e2a\u8282\u70b9\u653e\u8fdb\u961f\u5217queue\u7684\u65f6\u523b\u5c31\u8981\u628a\u5b83\u653e\u8fdbvisited, \u800c\u4e0d\u662f\u5728\u961f\u5217\u91cc\u53d6\u51fa\u6765\u7684\u65f6\u523b\u518d\u653e.      def BFS(start):\n      q = []\n      visited = {start:1}\n      q.append(start)\n\n      while len(q) != 0:\n        cur = q.pop(0)\n        for nextNode in cur.childrens: # tree's left and right    \n          if nextNode not in visted:   # tree's not null\n            q.append(nextNode)\n            visited[nextNode] = 1", 
+            "title": "BFS for trees/graphs"
+        }, 
+        {
+            "location": "/bfs/#bfs-with-distance", 
+            "text": "\u5728BFS\u7684\u540c\u65f6\u6211\u4eec\u53ef\u4ee5\u8bb0\u5f55\u4ecestart\u8282\u70b9\u5230\u5f53\u524dnode\u7684\u8ddd\u79bb, \u65b9\u6cd5\u662f\u628a\u4e00\u4e2a\u8ddd\u79bb\u4fe1\u606f\u540c\u65f6\u5165\u961f(\u5c01\u88c5\u4e00\u4e2aPair ), \u6216\u8005\u4f7f\u7528\u4e00\u4e2a\u4e0equeue\u5e73\u884c\u7684\u961f\u5217\u4fdd\u5b58\u8ddd\u79bb\u4fe1\u606f.      def BFS(start):\n      q = []\n      visited = {start:1}\n      q.append([start,1])\n\n      while len(q) != 0:\n        curNode, curDistance = q.pop(0)\n        for nextNode in cur.childrens: # tree's left and right    \n          if nextNode not in visted:   # tree's not null\n            q.append([nextNode,curDistance + 1])\n            visited[nextNode] = 1", 
+            "title": "BFS with distance"
+        }, 
+        {
+            "location": "/bfs/#bfs-with-layer", 
+            "text": "\u53c2\u8003\u4e0a\u9762\u7684\u6027\u8d28, \u53ef\u4ee5\u4e00\u6b21\u5904\u7406\"\u4e00\u5c42\"\u7684\u8282\u70b9, \"\u4e00\u5c42\"\u7684\u610f\u601d\u662f\u6307\u6240\u6709\u8282\u70b9\u8ddd\u79bbstart\u7684\u8ddd\u79bb\u76f8\u540c. \u4ee3\u7801\u5728while\u5faa\u73af\u91cc\u4e0d\u662f\u4e00\u6b21poll\u4e00\u4e2a\u8282\u70b9, \u800c\u662f\u4e00\u6b21\u628aqueue\u7684\u5185\u5bb9\u5904\u7406\u5b8c, \u7136\u540e\u6362\u65b0\u7684queue\u8fdb\u5165\u4e0b\u4e00\u6b21while\u5faa\u73af.      def BFS(start):\n      q = []\n      visited = {start:1}\n      q.append(start)\n      layer = []\n\n      while len(q) != 0:\n        subLayer = []\n        for curNode in q:\n            subLayer.append(curNode)\n            for nextNode in cur.childrens: # tree's left and right    \n                if nextNode not in visted:   # tree's not null\n                    q.append(nextNode)\n                    visited[nextNode] = 1\n        layer.add(sublayer)  \u5e38\u89c1\u7684\u9898\u76ee\u5982\u4e0b:   127. Word Ladder", 
+            "title": "BFS with layer"
+        }, 
+        {
+            "location": "/bfs/#complexity", 
+            "text": "\u5047\u8bbe\u4e00\u4e2a\u56fe\u6709N\u4e2a\u8282\u70b9\u548cM\u6761\u8fb9, BFS\u4f1a\u8d70\u904d\u6240\u6709\u8282\u70b9, \u65f6\u95f4\u662fO(N), \u7136\u540e\u7531\u4e8e\u6bcf\u4e2a\u8282\u70b9\u4f1a\u68c0\u67e5\u6240\u6709\u7684\u51fa\u8fb9, \u6700\u7ec8\u6240\u6709\u7684\u8fb9\u90fd\u4f1a\u88ab\u68c0\u67e5\u8fc7, \u65f6\u95f4\u662fO(M), \u6240\u4ee5BFS\u7684\u65f6\u95f4\u590d\u6742\u5ea6\u662fO(N+M).  \u961f\u5217\u91cc\u9762\u6700\u591a\u53ef\u80fd\u5b58\u653e\u6240\u6709\u8282\u70b9, \u7a7a\u95f4\u590d\u6742\u5ea6\u4e3aO(N).", 
+            "title": "complexity"
+        }, 
+        {
+            "location": "/bfs/#reference", 
+            "text": "http://x-wei.github.io/bfs-summary.html", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/dfs/", 
+            "text": "DFS\u548cBacktracking\u6709\u4ec0\u4e48\u4e0d\u540c\n\n\nDifference 1:\nDFS handles an explicit tree.While Backtracking handles an implicit tree\n\n\nDifference 2:\nDepth First Search is a special type of backtracking algorithmic design paradigm where the process of backtracking takes place in the leaf nodes. In case of backtracking,the algorithm also rejects the useless branch of the state-space tree.This is why DFS maintains the entire tree structure while Backtracking maintaines a pruned tree\n\n\nTree\n\n\nPreOrder\n\n\n\ndef helper(root):\n  if root == None:\n    return\n\n \u00a0print root.val #\u4e0d\u7528\u8003\u8651\u5de6\u53f3\u5b50\u6811\u7684val\uff0c\u53ea\u7ba1\u81ea\u5df1\uff08\u5c31\u662f\u5f53\u524d\u90a3\u4e00\u5c42\uff09\n \u00a0helper(root.left)\n  helper(root.right)\n\n\n\n\n\nPostOrder\n\n\n\ndef helper(root):\n  if root == None:\n    return\n \u00a0#\u4e8b\u524d\uff0c\u53ef\u4ee5\u68c0\u67e5false case\n \u00a0left = helper(root.left) \u00a0  #\u6216\u8005\u7528\u5176\u4ed6function\n \u00a0right = helper(root.right) \u00a0#\u5982Depth(root.left)\n \u00a0\n \u00a0#\u4e8b\u540e\uff0c\u53ef\u4ee5\u77e5\u9053left\u548cright\u7684val\n \u00a0#\u53ef\u4ee5\u5bf9left\u548cright\u505a\u4e00\u4e9b\u64cd\u4f5c\u5982\n  if(minleft==0 or minright==0)\n      return minleft\n=minright?minleft+1:minright+1;\n\n \u00a0return min(left,right) + 1\n\n\n\n\n\nEvery Node is Root\n\n\ndef pathSum(root,sum):\n  if root == None:\n     return 0\n  return findPathSum(root) + pathSum(root.left) + pathSum(root.right)\n\ndef findPathSum(root,sum):\n  if root == None:\n    return 0\n\n  retval = 0\n\n  if root.val == sum:\n    retval = 1\n\n  return retval + findPathSum(root.left) + findPathSum(root.right)\n\n\n\n\n\n2D Array", 
+            "title": "DFS"
+        }, 
+        {
+            "location": "/dfs/#dfsbacktracking", 
+            "text": "Difference 1:\nDFS handles an explicit tree.While Backtracking handles an implicit tree  Difference 2:\nDepth First Search is a special type of backtracking algorithmic design paradigm where the process of backtracking takes place in the leaf nodes. In case of backtracking,the algorithm also rejects the useless branch of the state-space tree.This is why DFS maintains the entire tree structure while Backtracking maintaines a pruned tree", 
+            "title": "DFS\u548cBacktracking\u6709\u4ec0\u4e48\u4e0d\u540c"
+        }, 
+        {
+            "location": "/dfs/#tree", 
+            "text": "", 
+            "title": "Tree"
+        }, 
+        {
+            "location": "/dfs/#preorder", 
+            "text": "def helper(root):\n  if root == None:\n    return\n\n \u00a0print root.val #\u4e0d\u7528\u8003\u8651\u5de6\u53f3\u5b50\u6811\u7684val\uff0c\u53ea\u7ba1\u81ea\u5df1\uff08\u5c31\u662f\u5f53\u524d\u90a3\u4e00\u5c42\uff09\n \u00a0helper(root.left)\n  helper(root.right)", 
+            "title": "PreOrder"
+        }, 
+        {
+            "location": "/dfs/#postorder", 
+            "text": "def helper(root):\n  if root == None:\n    return\n \u00a0#\u4e8b\u524d\uff0c\u53ef\u4ee5\u68c0\u67e5false case\n \u00a0left = helper(root.left) \u00a0  #\u6216\u8005\u7528\u5176\u4ed6function\n \u00a0right = helper(root.right) \u00a0#\u5982Depth(root.left)\n \u00a0\n \u00a0#\u4e8b\u540e\uff0c\u53ef\u4ee5\u77e5\u9053left\u548cright\u7684val\n \u00a0#\u53ef\u4ee5\u5bf9left\u548cright\u505a\u4e00\u4e9b\u64cd\u4f5c\u5982\n  if(minleft==0 or minright==0)\n      return minleft =minright?minleft+1:minright+1;\n\n \u00a0return min(left,right) + 1", 
+            "title": "PostOrder"
+        }, 
+        {
+            "location": "/dfs/#every-node-is-root", 
+            "text": "def pathSum(root,sum):\n  if root == None:\n     return 0\n  return findPathSum(root) + pathSum(root.left) + pathSum(root.right)\n\ndef findPathSum(root,sum):\n  if root == None:\n    return 0\n\n  retval = 0\n\n  if root.val == sum:\n    retval = 1\n\n  return retval + findPathSum(root.left) + findPathSum(root.right)", 
+            "title": "Every Node is Root"
+        }, 
+        {
+            "location": "/dfs/#2d-array", 
+            "text": "", 
+            "title": "2D Array"
+        }, 
+        {
+            "location": "/tree/", 
+            "text": "Build Tree Template\n\n\ndef build():\n    if reach to empty Node: #base base\n      return None\n\n    root = TreeNode(val)\n\n    root.left = build(left part)\n    root.right = build(right part)\n\n    return root\n\n\n\n\n\n\nInvert Binary Tree\n\n\nConstruct Binary Tree from LinkedList\n\n\nConstruct Binary Tree from Preorder and Inorder Traversal\n\n\nConstruct Binary Tree from Inorder and Postorder traversal", 
+            "title": "Tree"
+        }, 
+        {
+            "location": "/tree/#build-tree-template", 
+            "text": "def build():\n    if reach to empty Node: #base base\n      return None\n\n    root = TreeNode(val)\n\n    root.left = build(left part)\n    root.right = build(right part)\n\n    return root   Invert Binary Tree  Construct Binary Tree from LinkedList  Construct Binary Tree from Preorder and Inorder Traversal  Construct Binary Tree from Inorder and Postorder traversal", 
+            "title": "Build Tree Template"
+        }
+    ]
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    <title>BackTracking - Leetcode 总结</title>
+
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Leetcode 总结</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">HOME</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../linkedlist/">LinkedList</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">BackTracking</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../binarysearch/">BinarySearch</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../bfs/">BFS</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../dfs/">DFS</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../tree/">Tree</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fa fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../linkedlist/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../binarysearch/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#dfsbacktracking">DFS和Backtracking的区别</a></li>
+        <li class="first-level "><a href="#_1">迷宫比喻</a></li>
+        <li class="first-level "><a href="#generics">Generics 模板</a></li>
+        <li class="first-level "><a href="#_2">模板</a></li>
+        <li class="first-level "><a href="#case-study">Case Study</a></li>
+            <li class="second-level"><a href="#1-permutation">1. Permutation</a></li>
+                
+            <li class="second-level"><a href="#2-combination">2. Combination</a></li>
+                
+            <li class="second-level"><a href="#3-permutation-combination">3. Permutation和 Combination 里有重复数字</a></li>
+                
+            <li class="second-level"><a href="#4-string-parition">4. String Parition</a></li>
+                
+        <li class="first-level "><a href="#2d-matrix">2D Matrix</a></li>
+        <li class="first-level "><a href="#_3">注意地方</a></li>
+        <li class="first-level "><a href="#reference">Reference</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h3 id="dfsbacktracking">DFS和Backtracking的区别</h3>
+<ol>
+<li>
+<p>DFS: Search in a already existed graph</p>
+</li>
+<li>
+<p>BackTracking: Generating Graph/Tree</p>
+</li>
+</ol>
+<h3 id="_1">迷宫比喻</h3>
+<pre><code class="python">while exist not found:
+  for each path in the fork:
+    check whether the path is safe
+    if yes :  #notice that, we haven't select the current path in the fork
+      select it and continue walk
+  if all paths don't resolve the maze, return False
+
+</code></pre>
+
+<h3 id="generics">Generics 模板</h3>
+<blockquote>
+<p>Notice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If solve(n)
+is true, that means node n is part of a solution--that is, node n is one of the nodes on a path from the root to some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal nod</p>
+</blockquote>
+<pre><code class="java">boolean solve(Node n) {
+    if n is a leaf node {
+        if the leaf is a goal node,
+          return true
+        else
+          return false
+    } else {
+        for each child c of n {
+            if solve(c) succeeds, return true
+        }
+        return false
+    }
+}
+</code></pre>
+
+<pre><code class="java">void solve(Node n) {
+    if n is a leaf node {
+        if the leaf is a goal node,
+          count++,
+          return;
+        else return
+    } else {
+        for each child c of n {
+            solve(c)
+        }
+    }
+}
+</code></pre>
+
+<h3 id="_2">模板</h3>
+<pre><code class="python">def dfs(tmp, res):
+    if remain &lt; 0: #impossible
+        return
+    if success: #ending condition/base case
+        res.append(tmp[:])
+        return
+    for all possible childs: #同一层搜索
+        if not Valid(): #檢查当前位置是否符合条件，
+            continue  #如果不符合条件，就skip到下一child
+        tmp.append(arr[i])
+        dfs(tmp.res) # 到下一层搜索
+        tmp.pop()
+</code></pre>
+
+<h3 id="case-study">Case Study</h3>
+<h4 id="1-permutation">1. Permutation</h4>
+<p>将数组当做一个池子，第一次取出一个数，然后在池子里剩下的数中再任意取一个数此时组成两个数，</p>
+<p>然后再在池子中剩下的数里取数，直到无数可取，即取完一次，形成一个排列。</p>
+<pre><code class="python">def dfs(tmp,res,visited):
+   for i in range(0,n):
+      if vistied():  #第一次只能取出一个数
+         cointine
+      visited[i] = 1
+      dfs()
+      visited[i] = 0
+</code></pre>
+
+<h4 id="2-combination">2. Combination</h4>
+<p>Combination里的1,2和2,1是一样，所以2,1要忽略</p>
+<pre><code class="python">def dfs(l, tmp, res):
+   for i in range(l, n):
+      dfs(i)# 每个elemnt可以重复用， 但不能逆序
+</code></pre>
+
+<pre><code class="python">def dfs(l, tmp, res):
+   for i in range(l, n):
+      dfs(i+1)# 每个elemnt只能用一次
+</code></pre>
+
+<h4 id="3-permutation-combination">3. Permutation和 Combination 里有重复数字</h4>
+<pre><code class="python">def dfs(l, tmp, res):
+   for i in range(l, n):
+      if i != l and arr[i - 1] == arr[i]: # 跳过重复数字
+        continue
+      dfs(i+1)# 每个elemnt只能用一次
+</code></pre>
+
+<h4 id="4-string-parition">4. String Parition</h4>
+<pre><code class="python">def dfs(l, tmp, res):
+    for i in range(l, len(s)):
+        subString = s[l:i+1]
+    dfs(i+1, tmp, res)
+</code></pre>
+
+<ol>
+<li>
+<p><a href="https://github.com/cloi1994/code/blob/master/backtracking/PalindromePartitioning.java">Palindrome Partitioning</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cloi1994/code/blob/master/backtracking/restoreIpAddresses.py">Restore Ip Addresses</a></p>
+</li>
+</ol>
+<p><img alt="Screenshot" src="../img/test.png" />
+<img alt="Screenshot" src="../img/2la69p2.png" /></p>
+<h3 id="2d-matrix">2D Matrix</h3>
+<ol>
+<li>
+<p><a href="https://github.com/cloi1994/code/blob/master/backtracking/NQueen.py">N-Queen</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cloi1994/code/blob/master/backtracking/Sudoku%20Solver.py">Sudoku</a></p>
+</li>
+</ol>
+<h3 id="_3">注意地方</h3>
+<ol>
+<li>for loop是横着走（同一层）</li>
+<li>recursive()是向下走（下一层）</li>
+<li>如果 recursive function 有 return type, 你一定要加 return 在 fun_name() 之前</li>
+</ol>
+<h3 id="reference">Reference</h3>
+<p>https://www.jianshu.com/p/3ef0e4e1114d</p></div>
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '..';
+    </script>
+    <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../search/require.js"></script>
+    <script src="../search/search.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>

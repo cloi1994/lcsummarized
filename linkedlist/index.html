@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    <title>LinkedList - Leetcode 总结</title>
+
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Leetcode 总结</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">HOME</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">LinkedList</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../backtracking/">BackTracking</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../binarysearch/">BinarySearch</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../bfs/">BFS</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../dfs/">DFS</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../tree/">Tree</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fa fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../backtracking/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#1">1. 单链表的创建</a></li>
+        <li class="first-level "><a href="#2">2. 链表的操作</a></li>
+        <li class="first-level "><a href="#3-pointer">3. 链表最多使用三个Pointer</a></li>
+        <li class="first-level "><a href="#4-linkedlist">4. LinkedList的中点</a></li>
+        <li class="first-level "><a href="#5-linkedlist-remove-k-from-the-end-of-the-list">5. LinkedList - Remove k from the end of the list</a></li>
+        <li class="first-level "><a href="#6-linkedlist-cycle">6. LinkedList Cycle</a></li>
+        <li class="first-level "><a href="#7-hard">7. Hard</a></li>
+        <li class="first-level "><a href="#8-reference">8. Reference</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h3 id="1">1. 单链表的创建</h3>
+<blockquote>
+<p>单链表的创建一般分为分为头插发(Head Insert)和尾插法(Tail Insert)</p>
+</blockquote>
+<p>头插法是每次将新的节点插入到头部,这样得到的链表顺序是逆序</p>
+<p>尾插法是每次将新的节点插入到尾部,这样得到的链表顺序是正序的. <strong> 值得注意的是,采用尾插法的时候需要一个尾指针,时时刻刻指向链表的尾部 </strong></p>
+<h3 id="2">2. 链表的操作</h3>
+<blockquote>
+<p>链表的插入无非是插入,删除操作.</p>
+</blockquote>
+<p>在插入或删除的时候,一定要拿到他的Prev Pointer</p>
+<p>为了便于链表的操作(例如,插入删除, 改变Head),一般使用带头结点的链表(Dummy Node)</p>
+<p>常见的题目如下:</p>
+<ul>
+<li>Add Two Numbers</li>
+<li>Merge Two Sorted Lists</li>
+<li>Partition List</li>
+<li>Remove Linked List Elements</li>
+</ul>
+<h3 id="3-pointer">3. 链表最多使用三个Pointer</h3>
+<blockquote>
+<p>Prev - 用來Delete CurNode</p>
+<p>Cur - 用來遍历Linklist</p>
+<p>Next -保存CurNode的下一个Pointer,避免修改了Cur.next,而无法得到Next</p>
+</blockquote>
+<p>常见的题目如下:</p>
+<ul>
+<li>24 <a href="https://github.com/cloi1994/code/blob/master/linkedlist/swapPairs.py">Swap Nodes in Pairs</a></li>
+<li>25 <a href="https://github.com/cloi1994/code/blob/master/linkedlist/reverseKGroup.java">Reverse Nodes in k-Group</a></li>
+<li>61 <a href="https://github.com/cloi1994/code/blob/master/linkedlist/rotateRight.py">Rotate List</a></li>
+<li>82 <a href="https://github.com/cloi1994/code/blob/master/linkedlist/deleteDuplicates.py">Remove Duplicates from Sorted List II</a></li>
+<li>91 <a href="https://github.com/cloi1994/code/blob/master/linkedlist/reverseList.py">Reverse Linked List I</a></li>
+<li>92 <a href="https://github.com/cloi1994/code/blob/master/linkedlist/reverseBetween.py">Reverse Linked List II</a></li>
+</ul>
+<h3 id="4-linkedlist">4. LinkedList的中点</h3>
+<blockquote>
+<p>使用两个指针slow,fast
+slow和fast同时向前跳, slow每次向前跳一个节点, fast每次向前跳两个节点,
+当fast调到尾部的时候, slow就指向了中点</p>
+</blockquote>
+<pre><code class="python">        while fast.next and fast.next.next:
+            slow = slow.next
+            fast = fast.next.next
+</code></pre>
+
+<h3 id="5-linkedlist-remove-k-from-the-end-of-the-list">5. LinkedList - Remove k from the end of the list</h3>
+<p>fast先前跳K步, slow和fast每次向前跳一个节点, 当fast调到尾部的时候, slow就指向了K Node的Prev Node.</p>
+<h3 id="6-linkedlist-cycle">6. LinkedList Cycle</h3>
+<blockquote>
+<p>a) 链表是否存在环?</p>
+</blockquote>
+<p>我们可以使用两个指针slow和fast, fast每次前进两步,slow每次前进一次</p>
+<p>如果fast和slow都到链表尾部且为空,则不在环.</p>
+<p>如果fast和slow第一次相遇到某一节点,且不为空,则存在环.</p>
+<pre><code class="python">        while fast.next and fast.next.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return true
+        return false
+</code></pre>
+
+<blockquote>
+<p>b) 链表环的入口节点?</p>
+</blockquote>
+<p>根据第一次相遇的地方,把slow指回head,然后slow,fast在相同的速度再走一遍,当他们再次相遇就是入口了.</p>
+<pre><code class="python">        while fast.next and fast.next.next:
+            slow = slow.next
+            fast = fast.next.next
+            if fast == slow:
+                slow = head
+                while slow != fast:
+                        slow = slow.next
+                        fast = fast.next
+            return slow
+</code></pre>
+
+<h3 id="7-hard">7. Hard</h3>
+<p>常见的题目如下:
+- 25 Reverse Nodes in k-Group
+- 138 Copy List with Random Pointer
+- 143 Reorder List
+- 146 LRU Cache</p>
+<h3 id="8-reference">8. Reference</h3>
+<p>https://www.jianshu.com/p/ecb5c1b6c318</p></div>
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '..';
+    </script>
+    <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../search/require.js"></script>
+    <script src="../search/search.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
